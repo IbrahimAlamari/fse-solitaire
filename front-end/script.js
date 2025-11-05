@@ -5,11 +5,6 @@ let tableBody =document.querySelector(".tb tbody"); // make sure your table has 
 axios.get("http://localhost/Fse-solitaire/back-end/getscores.php")
   .then(response => {
     const scores = response.data; 
-
-   
-
-     
-
     scores.forEach(score => {
       let tr = document.createElement("tr");
 
