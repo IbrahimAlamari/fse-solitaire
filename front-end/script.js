@@ -10,7 +10,7 @@ axios.get("../back-end/getscores.php")
       let tr = document.createElement("tr");
 
       let tdUsername = document.createElement("td");
-      tdUsername.textContent = score.username;
+      tdUsername.textContent = score.name;
       tr.appendChild(tdUsername);
 
       let tdScore = document.createElement("td");
